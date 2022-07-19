@@ -1,7 +1,7 @@
 // 1.解法一，时间复杂度 O(N) 空间复杂度 O(1)
 function findRepeatNumber(nums: number[]): number {
     if(!nums?.length){
-        return;
+        return -1;
     }
     for(let i = 0 ; i <nums.length;i++){
          let index = nums[i]
@@ -18,7 +18,8 @@ function findRepeatNumber(nums: number[]): number {
         }
     }
     
-    
+    return -1;
+
     
     };
 
@@ -26,7 +27,7 @@ function findRepeatNumber(nums: number[]): number {
 //2.解法2 排序后扫描数字，排序算法 时间复杂度 O(NlogN) ,总的时间复杂度 O(NlogN) + O(N) 空间复杂度 O(N)
 function findRepeatNumber2(nums: number[]): number {
     if(!nums?.length){
-        return;
+        return -1;
     }
     let sortedNums = nums.sort()
     
@@ -36,6 +37,8 @@ function findRepeatNumber2(nums: number[]): number {
        }
       
     }
+
+    return -1
     
     
     };
@@ -44,7 +47,7 @@ function findRepeatNumber2(nums: number[]): number {
 
 function findRepeatNumber3(nums: number[]): number {
     if(!nums?.length){
-        return;
+        return -1;
     }
     let hash = {}
     
@@ -58,6 +61,7 @@ function findRepeatNumber3(nums: number[]): number {
         }
       
     }
-    
+    return -1;
+
     
     };
