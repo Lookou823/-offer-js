@@ -1,3 +1,4 @@
+// 题目链接 [https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/]
 // 1.解法一，时间复杂度 O(N) 空间复杂度 O(1)
 function findRepeatNumber(nums: number[]): number {
     if(!nums?.length){
